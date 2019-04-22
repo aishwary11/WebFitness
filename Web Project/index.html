@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Fitness</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo.png" alt="Fitness" class="logo">
+                    <ul class="main-nav animated lightSpeedIn" id="check">
+                        <li><a href="#">Gyming</a></li>
+                        <li><a href="#">CrossFit</a></li>
+                        <li><a href="#">Cardio</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                    <a href="#" class="mobile"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="main-content-header">
+            <h1>Welcome to my<span class="color"> Fitness</span> Site.</h1>
+            <a href="#" class="btn btn-full">Click For Fitness Plan</a>
+            <a href="#" class="btn btn-nav">Show me more</a>
+            </div>
+        </header>
+        <script>
+            function slideshow(){
+                var x = document.getElementById('check');
+                if(x.style.display === "none"){
+                    x.style.display = "block";
+                }
+                else{
+                    x.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
